@@ -9,9 +9,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100vw;
   background-color: white;
   height: 55px;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
 }
 
 .header__left-side {
