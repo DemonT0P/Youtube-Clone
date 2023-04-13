@@ -1,4 +1,6 @@
 body {
   margin: 0px;
   margin-top: 55px;
+  margin-left: 72px;
+  height: calc(100vh - 55px);
 }/*# sourceMappingURL=main.css.map */

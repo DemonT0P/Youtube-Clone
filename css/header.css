@@ -33,7 +33,7 @@
 }
 
 .header__hambuguer-menu {
-  height: 24px;
+  width: 24px;
 }
 
 .header__youtube-logo {
@@ -109,13 +109,13 @@
 }
 
 .header__search-icon {
-  height: 24px;
+  width: 24px;
   position: relative;
   top: 2px;
 }
 
 .header__voice-search-icon {
-  height: 24px;
+  width: 24px;
   margin-left: 8px;
   margin-right: 5px;
   padding: 8px;
@@ -139,15 +139,15 @@
 }
 
 .header__upload-icon {
-  height: 24px;
+  width: 24px;
 }
 
 .header__apps-icon {
-  height: 24px;
+  width: 24px;
 }
 
 .header__notifications-icon {
-  height: 24px;
+  width: 24px;
 }
 
 .header__profile-picture {

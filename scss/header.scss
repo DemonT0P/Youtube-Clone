@@ -4,9 +4,7 @@
   align-items: center;
 }
 
-@mixin icon-height {
-  height: 24px;
-}
+$icon-height: 24px;
 
 /*HEADERS LEFT SIDE*/
 
@@ -28,7 +26,7 @@
 }
 
 .header__hambuguer-menu {
-  @include icon-height;
+  width: $icon-height;
 }
 
 .header__youtube-logo {
@@ -76,13 +74,13 @@
 }
 
 .header__search-icon {
-  @include icon-height;
+  width: $icon-height;
   position: relative;
   top: 2px;
 }
 
 .header__voice-search-icon {
-  @include icon-height;
+  width: $icon-height;
   margin-left: 8px;
   margin-right: 5px;
   padding: 8px;
@@ -99,13 +97,13 @@
 }
 
 .header__upload-icon {
-  @include icon-height;
+  width: $icon-height;
 }
 .header__apps-icon {
-  @include icon-height;
+  width: $icon-height;
 }
 .header__notifications-icon {
-  @include icon-height;
+  width: $icon-height;
 }
 .header__profile-picture {
   height: 32px;
