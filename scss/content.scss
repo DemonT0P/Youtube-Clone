@@ -1,0 +1,71 @@
+.content {
+  padding: 26px 24px;
+  font-family: "Roboto", Arial;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 34px;
+  column-gap: 16px;
+  background-color: rgb(247, 247, 247);
+}
+
+@media (min-width: 1000px) {
+  .content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 750px) {
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 555px) {
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.content__video {
+  width: 100%;
+}
+
+.video__thumbnail {
+  img {
+    width: 100%;
+  }
+}
+
+.video__info-grid {
+  display: flex;
+  gap: 12px;
+  padding: 8px 0px;
+}
+
+.info-grid__profile-picture {
+  img {
+    width: 36px;
+    border-radius: 24px;
+  }
+}
+
+.info__title {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 9px;
+}
+
+.info__channel-name {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 3px;
+  color: rgb(92, 92, 92);
+}
+
+.info__view-date {
+  display: block;
+  font-size: 12px;
+  color: rgb(92, 92, 92);
+}
