@@ -12,6 +12,7 @@
       -ms-flex-pack: start;
           justify-content: flex-start;
   gap: 1px;
+  z-index: 200;
   position: fixed;
   top: 55px;
   left: 0;
@@ -26,6 +27,7 @@
 .sidebar__icon-container {
   width: 100%;
   color: rgb(43, 43, 43);
+  z-index: 200;
   padding: 15px 0px;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -1,8 +1,9 @@
 $font: "Roboto", Arial;
 
 body {
+  font-family: $font;
   margin: 0px;
-  margin-top: 55px;
+  margin-top: 56px;
   margin-left: 72px;
   height: calc(100vh - 55px);
 }

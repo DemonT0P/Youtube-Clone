@@ -1,5 +1,5 @@
 .content {
-  padding: 26px 24px;
+  padding: 25px 24px;
   font-family: "Roboto", Arial;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -31,9 +31,23 @@
 }
 
 .video__thumbnail {
+  position: relative;
   img {
     width: 100%;
   }
+}
+
+.video__timestamp {
+  position: absolute;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px;
+  padding-bottom: 3px;
+  border-radius: 2px;
+  color: white;
+  background-color: rgba($color: #00000031, $alpha: 1);
+  right: 4px;
+  bottom: 11px;
 }
 
 .video__info-grid {

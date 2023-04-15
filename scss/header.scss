@@ -12,11 +12,12 @@ $icon-height: 24px;
   @include flex;
   background-color: white;
   height: 56px;
+  z-index: 10;
   position: fixed;
   top: 0px;
   right: 0px;
   left: 0px;
-  border-bottom: 1px solid rgb(235, 235, 235);
+  border-bottom: 1px solid rgb(218, 218, 218);
 }
 
 .header__left-side {
@@ -47,8 +48,8 @@ $icon-height: 24px;
   height: 36px;
   flex: 1;
   width: 0px;
-  max-width: 340px;
-  min-width: 1px;
+  max-width: 342px;
+  border-radius: 2px;
   padding-left: 12px;
   background-color: white;
   box-shadow: inset 1px 1px 2px rgb(241, 241, 241);
@@ -103,8 +104,29 @@ $icon-height: 24px;
 .header__apps-icon {
   width: $icon-height;
 }
+.header__notifications-container {
+  position: relative;
+}
+.header__notifications-number {
+  z-index: 100;
+  position: absolute;
+  top: -1px;
+  right: -7px;
+  height: 15px;
+  width: 5.6167px;
+  padding: 0px 5px;
+  border-radius: 10px;
+  border: 2px solid white;
+  font-size: 11px;
+  background-color: rgb(206, 0, 0);
+  color: white;
+  width: fit-content;
+}
+
 .header__notifications-icon {
-  width: $icon-height;
+  position: relative;
+  top: 2px;
+  height: 24px;
 }
 .header__profile-picture {
   height: 32px;
