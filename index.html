@@ -23,35 +23,47 @@
     <title>YouTube Clone</title>
   </head>
   <body>
-    <div class="header">
+    <header class="header">
       <div class="header__left-side">
         <img class="header__hambuguer-menu" src="./icons/hamburger-menu.svg" />
         <img class="header__youtube-logo" src="./icons/youtube-logo.svg" />
       </div>
       <div class="header__search">
         <input class="header__search-bar" type="text" placeholder="Search" />
-        <button class="header__search-button">
+        <button class="header__search-container">
           <img class="header__search-icon" src="./icons//search.svg" />
+          <div class="header__popup">Search</div>
         </button>
-        <img
-          class="header__voice-search-icon"
-          src="./icons/voice-search-icon.svg"
-        />
+        <div class="header__icon-container">
+          <img
+            class="header__voice-search-icon"
+            src="./icons/voice-search-icon.svg"
+          />
+          <div class="header__popup">Search with your voice</div>
+        </div>
       </div>
       <div class="header__right-side">
-        <img class="header__upload-icon" src="./icons/upload.svg" />
-        <img class="header__apps-icon" src="./icons/youtube-apps.svg" />
-        <div class="header__notifications-container">
+        <div class="header__icon-container">
+          <img class="header__upload-icon" src="./icons/upload.svg" />
+          <div class="header__popup">Create</div>
+        </div>
+        <div class="header__icon-container">
+          <img class="header__apps-icon" src="./icons/youtube-apps.svg" />
+          <div class="header__popup">Youtube Apps</div>
+        </div>
+
+        <div class="header__icon-container">
           <div class="header__notifications-number">3</div>
           <img
             class="header__notifications-icon"
             src="./icons/notifications.svg"
           />
+          <div class="header__popup">Notifications</div>
         </div>
         <img class="header__profile-picture" src="./icons/my-channel.jpeg" />
       </div>
-    </div>
-    <div class="sidebar">
+    </header>
+    <nav class="sidebar">
       <div class="sidebar__icon-container">
         <img class="sidebar__icon sidebar__home-icon" src="./icons/home.svg" />
         <span>Home</span>
@@ -91,12 +103,13 @@
         />
         <span>Library</span>
       </div>
-    </div>
-
-    <div class="content">
+    </nav>
+    <main class="content">
       <div class="content__video">
         <div class="video__thumbnail">
-          <img src="./imgs/thumbnail-1.webp" />
+          <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY"
+            ><img src="./imgs/thumbnail-1.webp"
+          /></a>
           <div class="video__timestamp">14:20</div>
         </div>
         <div class="video__info-grid">
@@ -114,7 +127,9 @@
       </div>
       <div class="content__video">
         <div class="video__thumbnail">
-          <img src="./imgs/thumbnail-2.webp" />
+          <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk"
+            ><img src="./imgs/thumbnail-2.webp"
+          /></a>
           <div class="video__timestamp">8:22</div>
         </div>
         <div class="video__info-grid">
@@ -130,7 +145,9 @@
       </div>
       <div class="content__video">
         <div class="video__thumbnail">
-          <img src="./imgs/thumbnail-3.webp" />
+          <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w"
+            ><img src="./imgs/thumbnail-3.webp"
+          /></a>
           <div class="video__timestamp">9:13</div>
         </div>
         <div class="video__info-grid">
@@ -148,7 +165,9 @@
       </div>
       <div class="content__video">
         <div class="video__thumbnail">
-          <img src="./imgs/thumbnail-4.webp" />
+          <a href="https://www.youtube.com/watch?v=094y1Z2wpJg"
+            ><img src="./imgs/thumbnail-4.webp"
+          /></a>
           <div class="video__timestamp">22:09</div>
         </div>
         <div class="video__info-grid">
@@ -167,7 +186,9 @@
       </div>
       <div class="content__video">
         <div class="video__thumbnail">
-          <img src="./imgs/thumbnail-5.webp" />
+          <a href="https://www.youtube.com/watch?v=86CQq3pKSUw"
+            ><img src="./imgs/thumbnail-5.webp"
+          /></a>
           <div class="video__timestamp">11:17</div>
         </div>
         <div class="video__info-grid">
@@ -185,7 +206,9 @@
       </div>
       <div class="content__video">
         <div class="video__thumbnail">
-          <img src="./imgs/thumbnail-6.webp" />
+          <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg"
+            ><img src="./imgs/thumbnail-6.webp"
+          /></a>
           <div class="video__timestamp">19:59</div>
         </div>
         <div class="video__info-grid">
@@ -203,7 +226,9 @@
       </div>
       <div class="content__video">
         <div class="video__thumbnail">
-          <img src="./imgs/thumbnail-7.webp" />
+          <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
+            <img src="./imgs/thumbnail-7.webp"
+          /></a>
           <div class="video__timestamp">10:13</div>
         </div>
         <div class="video__info-grid">
@@ -219,7 +244,9 @@
       </div>
       <div class="content__video">
         <div class="video__thumbnail">
-          <img src="./imgs/thumbnail-8.webp" />
+          <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
+            <img src="./imgs/thumbnail-8.webp"
+          /></a>
           <div class="video__timestamp">7:12</div>
         </div>
         <div class="video__info-grid">
@@ -237,7 +264,9 @@
       </div>
       <div class="content__video">
         <div class="video__thumbnail">
-          <img src="./imgs/thumbnail-9.webp" />
+          <a href="https://www.youtube.com/watch?v=ixmxOlcrlUc"
+            ><img src="./imgs/thumbnail-9.webp"
+          /></a>
           <div class="video__timestamp">13:17</div>
         </div>
         <div class="video__info-grid">
@@ -253,7 +282,9 @@
       </div>
       <div class="content__video">
         <div class="video__thumbnail">
-          <img src="./imgs/thumbnail-10.webp" />
+          <a href="https://www.youtube.com/watch?v=R2vXbFp5C9o">
+            <img src="./imgs/thumbnail-10.webp"
+          /></a>
           <div class="video__timestamp">7:53</div>
         </div>
         <div class="video__info-grid">
@@ -272,7 +303,9 @@
       </div>
       <div class="content__video">
         <div class="video__thumbnail">
-          <img src="./imgs/thumbnail-11.webp" />
+          <a href="https://www.youtube.com/watch?v=0nZuYyXET3s"
+            ><img src="./imgs/thumbnail-11.webp"
+          /></a>
           <div class="video__timestamp">4:10</div>
         </div>
         <div class="video__info-grid">
@@ -291,7 +324,9 @@
       </div>
       <div class="content__video">
         <div class="video__thumbnail">
-          <img src="./imgs/thumbnail-12.webp" />
+          <a href="https://www.youtube.com/watch?v=9iMGFqMmUFs"
+            ><img src="./imgs/thumbnail-12.webp"
+          /></a>
           <div class="video__timestamp">4:51</div>
         </div>
         <div class="video__info-grid">
@@ -308,6 +343,6 @@
           </div>
         </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>

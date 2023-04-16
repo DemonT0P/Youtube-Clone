@@ -36,10 +36,12 @@
 
 .header__hambuguer-menu {
   width: 24px;
+  cursor: pointer;
 }
 
 .header__youtube-logo {
   height: 20px;
+  cursor: pointer;
 }
 
 /*HEADERS MIDDLE SIDE*/
@@ -102,18 +104,74 @@
   border: 1px solid rgb(0, 0, 218);
 }
 
-.header__search-button {
+.header__search-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
   height: 40px;
   border: 1px solid rgb(190, 190, 190);
   border-left: none;
   width: 64px;
   background-color: rgb(243, 243, 243);
+  cursor: pointer;
+}
+.header__search-container:hover {
+  background-color: rgb(230, 230, 230);
+}
+.header__search-container:hover .header__popup {
+  opacity: 1;
 }
 
 .header__search-icon {
   width: 24px;
   position: relative;
-  top: 2px;
+}
+
+.header__popup {
+  position: absolute;
+  white-space: nowrap;
+  opacity: 0;
+  top: 50px;
+  padding: 8px;
+  border-radius: 4px;
+  color: white;
+  background-color: rgba(96, 96, 96, 0.9);
+  font-size: 12px;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+}
+
+.header__icon-container {
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+}
+.header__icon-container:hover .header__popup {
+  opacity: 1;
 }
 
 .header__voice-search-icon {
@@ -123,6 +181,7 @@
   padding: 8px;
   background-color: rgb(250, 250, 250);
   border-radius: 20px;
+  cursor: pointer;
 }
 
 /*HEADERS RIGHT SIDE*/
@@ -142,20 +201,18 @@
 
 .header__upload-icon {
   width: 24px;
+  cursor: pointer;
 }
 
 .header__apps-icon {
   width: 24px;
-}
-
-.header__notifications-container {
-  position: relative;
+  cursor: pointer;
 }
 
 .header__notifications-number {
   z-index: 100;
   position: absolute;
-  top: -1px;
+  top: -3px;
   right: -7px;
   height: 15px;
   width: 5.6167px;
@@ -172,11 +229,12 @@
 
 .header__notifications-icon {
   position: relative;
-  top: 2px;
   height: 24px;
+  cursor: pointer;
 }
 
 .header__profile-picture {
   height: 32px;
   border-radius: 22px;
+  cursor: pointer;
 }/*# sourceMappingURL=header.css.map */
