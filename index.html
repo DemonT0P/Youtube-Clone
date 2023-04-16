@@ -25,7 +25,11 @@
   <body>
     <header class="header">
       <div class="header__left-side">
-        <img class="header__hambuguer-menu" src="./icons/hamburger-menu.svg" />
+        <img
+          class="header__hambuguer-menu"
+          src="./icons/hamburger-menu.svg"
+          defer
+        />
         <img class="header__youtube-logo" src="./icons/youtube-logo.svg" />
       </div>
       <div class="header__search">
@@ -60,7 +64,12 @@
           />
           <div class="header__popup">Notifications</div>
         </div>
-        <img class="header__profile-picture" src="./icons/my-channel.jpeg" />
+        <a
+          href="https://www.youtube.com/@SuperSimpleDev"
+          class="header__icon-container"
+        >
+          <img class="header__profile-picture" src="./icons/my-channel.jpeg" />
+        </a>
       </div>
     </header>
     <nav class="sidebar">
